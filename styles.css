@@ -126,3 +126,40 @@ main {
   color: #555;
   letter-spacing: 0.05em;
 }
+
+footer {
+  border-top: 1px solid #e0e0e0;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  font-family: monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 1px solid #1a1a1a;
+  padding-bottom: 0.1rem;
+}
+
+.footer-links a:hover {
+  color: #1a7a9a;
+  border-bottom-color: #1a7a9a;
+}
+
+.footer-copy {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: #555;
+  letter-spacing: 0.05em;
+}
