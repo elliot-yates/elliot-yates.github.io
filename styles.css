@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1a1a1a;
+    letter-spacing: 0.05em;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border: 2px solid #1a1a1a;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    transition: background-color 0.2s ease, color 0.2s;
+}
+
+.contact-btn:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
