@@ -1,3 +1,14 @@
+:root {
+    --color-accent: #1a7a9a;
+    --color-text: #1a1a1a;
+    --color-text-muted: #555;
+    --color-text-subtle: #444;
+    --color-border: #e0e0e0;
+    --font-serif: 'DM Serif Display', serif;
+    --font-mono: 'DM Mono', monospace;
+    --font-sans: 'DM Sans', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +16,8 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: var(--font-sans);
+    color: var(--color-text);
 }
 
 header {
@@ -16,33 +28,33 @@ header {
     align-items: center;
     padding: 1rem 2rem;
     background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--color-border);
     z-index: 100;
 }
 
 .logo {
-    font-family: monospace;
+    font-family: var(--font-mono);
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
-    color: #1a1a1a;
+    color: var(--color-text);
     letter-spacing: 0.05em;
 }
 
 .contact-btn {
     display: inline-block;
     padding: 0.5rem 1.25rem;
-    border: 2px solid #1a1a1a;
-    color: #1a1a1a;
+    border: 2px solid var(--color-text);
+    color: var(--color-text);
     text-decoration: none;
-    font-family: monospace;
+    font-family: var(--font-mono);
     font-size: 0.85rem;
     letter-spacing: 0.05em;
     transition: background-color 0.2s ease, color 0.2s;
 }
 
 .contact-btn:hover {
-    background-color: #1a1a1a;
+    background-color: var(--color-text);
     color: #fff;
 }
 
@@ -53,30 +65,31 @@ main {
 }
 
 .hero-label {
-  font-family: monospace;
+  font-family: var(--font-mono);
   font-size: 0.8rem;
   letter-spacing: 0.15em;
-  color: #1a7a9a;
+  color: var(--color-accent);
   margin-bottom: 0.75rem;
 }
 
 .hero-name {
+  font-family: var(--font-serif);
   font-size: 3.5rem;
   font-weight: bold;
-  color: #1a1a1a;
+  color: var(--color-text);
   line-height: 1.1;
   margin-bottom: 0.5rem;
 }
 
 .hero-role {
   font-size: 1.1rem;
-  color: #555;
+  color: var(--color-text-muted);
   margin-bottom: 1.5rem;
 }
 
 .hero-summary {
   font-size: 1rem;
-  color: #444;
+  color: var(--color-text-subtle);
   line-height: 1.7;
   max-width: 620px;
   margin-bottom: 2rem;
@@ -85,18 +98,18 @@ main {
 .hero-links a {
   display: inline-block;
   margin-right: 1.5rem;
-  font-family: monospace;
+  font-family: var(--font-mono);
   font-size: 0.85rem;
   letter-spacing: 0.05em;
-  color: #1a1a1a;
+  color: var(--color-text);
   text-decoration: none;
-  border-bottom: 1px solid #1a1a1a;
+  border-bottom: 1px solid var(--color-text);
   padding-bottom: 0.1rem;
 }
 
 .hero-links a:hover {
-  color: #1a7a9a;
-  border-bottom-color: #1a7a9a;
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
 }
 
 .highlights {
@@ -104,7 +117,7 @@ main {
   flex-wrap: wrap;
   gap: 2rem 3rem;
   padding-top: 3rem;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid var(--color-border);
   margin-top: 1rem;
 }
 
@@ -115,20 +128,20 @@ main {
 }
 
 .highlight-value {
-  font-family: monospace;
+  font-family: var(--font-mono);
   font-size: 1.5rem;
   font-weight: bold;
-  color: #1a7a9a;
+  color: var(--color-accent);
 }
 
 .highlight-label {
   font-size: 0.8rem;
-  color: #555;
+  color: var(--color-text-muted);
   letter-spacing: 0.05em;
 }
 
 footer {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid var(--color-border);
   padding: 2rem;
   display: flex;
   justify-content: space-between;
@@ -143,23 +156,23 @@ footer {
 }
 
 .footer-links a {
-  font-family: monospace;
+  font-family: var(--font-mono);
   font-size: 0.8rem;
   letter-spacing: 0.05em;
-  color: #1a1a1a;
+  color: var(--color-text);
   text-decoration: none;
-  border-bottom: 1px solid #1a1a1a;
+  border-bottom: 1px solid var(--color-text);
   padding-bottom: 0.1rem;
 }
 
 .footer-links a:hover {
-  color: #1a7a9a;
-  border-bottom-color: #1a7a9a;
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
 }
 
 .footer-copy {
-  font-family: monospace;
+  font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: #555;
+  color: var(--color-text-muted);
   letter-spacing: 0.05em;
 }
