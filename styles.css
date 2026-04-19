@@ -397,3 +397,50 @@ footer {
   padding-bottom: 0.1rem;
   opacity: 0.4;
 }
+
+.certifications {
+  padding-top: 4rem;
+  border-top: 1px solid var(--color-border);
+  margin-top: 1rem;
+}
+
+.cert-card {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cert-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.cert-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: var(--color-text);
+}
+
+.cert-issuer {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.05em;
+}
+
+.cert-status {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  margin-left: 2rem;
+}
